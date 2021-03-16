@@ -28,25 +28,36 @@ a {
 	background-color: #FFA07A;
 }
 
-/*.form {
+.search {
 	height: 160px;
-	width: 700px;
-	background-color: #87CEFA;
-	margin: 0 auto 0 auto;
-}*/
+	background-color: white;
+	overflow: hidden;
+}
 
 form {
-	height:160px;
-	background-color: #87CEFA;
+	width: 500px;
+	height: 46px;
+	border: 1px solid #5D6063;
+	border-radius: 46px;
+	background-color: white;
+	margin: 20px auto;
 }
 
 input {
 	display: block;
-	border-radius: 46px;
-	border: 1px solid #5D6063;
-	width: 500px;
-	height: 46px;
-	margin: 25px auto; 
+	width: 400px;
+	height: 30px;
+	margin: 7px auto;
+	border: none; 
+	font-size: 16px;
+}
+
+input:focus {
+	outline: none;
+}
+
+form:hover {
+	border: 1px groove #DCDCDC;
 }
 
 .footer {
