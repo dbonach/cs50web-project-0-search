@@ -43,7 +43,7 @@ a {
 form {
 	width: 500px;
 	height: 46px;
-	border: 1px solid #5D6063;
+	border: 1px solid #E3E3E3;
 	border-radius: 46px;
 	background-color: white;
 	margin: 26px auto;
@@ -63,7 +63,7 @@ input:focus {
 }
 
 form:hover {
-	border: 1px groove #DCDCDC;
+	box-shadow: 0 0 4px 2px #E3E3E3;
 }
 
 .footer {
@@ -73,4 +73,11 @@ form:hover {
 
 .center {
 	margin:0 auto;
+}
+
+svg {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	margin: 12px 0 0 14px;
 }
