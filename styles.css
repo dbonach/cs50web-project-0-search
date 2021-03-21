@@ -1,3 +1,4 @@
+/* General settings */
 * {
 	margin: 0;
 	padding: 0;
@@ -10,11 +11,23 @@
 	background-color: #D3D3D3;
 }
 
+/* Header */
 .menu {
 	height: 60px;
 	background-color: white;
 	text-align: right;
 	overflow: hidden;
+}
+
+.item {
+	margin-right: 20px;
+	font-size: 13px;
+	color: red;
+	display: inline;
+}
+
+.items {
+	margin: 10px 10px 0 0;
 }
 
 a {
@@ -26,17 +39,35 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* Logo session */
 .logo {
 	height: 193.6px;
 	background-color: white;
 	overflow: hidden;
+	position: relative;
 }
 
-[alt='Logo'] {
-	display: block;
-	margin: 102px auto 0 auto;
+.image {
+	background-size: 272px 92px;
+	height: 92px;
+	width: 272px;
+	background: url("main_logo.png");
+	position: absolute;
+	bottom: 6px;
+	margin: auto;
+	left: 0;
+	right: 0;
 }
 
+.logo-subtext {
+	color: #4285f4;
+	font-size: 16px roboto-regular, arial;
+	position: relative;
+	left: 215px;
+	top: 76px;
+}
+
+/* Search session upper */
 .search {
 	height: 160px;
 	background-color: white;
@@ -52,7 +83,14 @@ form {
 	margin: 26px auto;
 }
 
-input {
+svg {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	margin: 12px 0 0 14px;
+}
+
+form > input {
 	display: block;
 	width: 400px;
 	height: 30px;
@@ -61,7 +99,7 @@ input {
 	font-size: 16px;
 }
 
-input:focus {
+form > input:focus {
 	outline: none;
 }
 
@@ -69,29 +107,48 @@ form:hover {
 	box-shadow: 0 0 4px 2px #E3E3E3;
 }
 
+/* Search session lower */
+.center {
+	width: 584px;
+	margin: auto;
+	text-align: center;
+}
+
+.center > input {
+	background-color: #f8f9fa;
+	border: 1px solid #f8f9fa;
+	border-radius: 4px;
+	color: #3c4043;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	margin: 3px 4px;
+	padding: 0 16px;
+	line-height: 27px;
+	height: 34px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	outline: none;
+}
+
+.center > input:hover {
+	box-shadow: 0 0 1px 1px #D0D0D0;
+}
+
+#first {
+	box-sizing: content-box;
+	width: 6.7em;
+}
+
+#second {
+	box-sizing: content-box;
+	width: 7.8em;
+}
+
+/* Footer */
 .footer {
 	height: 244.6px;
 	background-color: white;
 }
 
-.center {
-	margin:0 auto;
-}
 
-svg {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	margin: 12px 0 0 14px;
-}
-
-.item {
-	margin-right: 20px;
-	font-size: 13px;
-	color: red;
-	display: inline;
-}
-
-.items {
-margin: 10px 10px 0 0;
-}	
