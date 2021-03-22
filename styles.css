@@ -74,7 +74,7 @@ a:hover {
 	overflow: hidden;
 }
 
-form {
+.searchbox {
 	width: 500px;
 	height: 46px;
 	border: 1px solid #E3E3E3;
@@ -90,7 +90,7 @@ svg {
 	margin: 12px 0 0 14px;
 }
 
-form > input {
+.searchbox > input {
 	display: block;
 	width: 400px;
 	height: 30px;
@@ -99,11 +99,11 @@ form > input {
 	font-size: 16px;
 }
 
-form > input:focus {
+.searchbox > input:focus {
 	outline: none;
 }
 
-form:hover {
+.searchbox:hover {
 	box-shadow: 0 0 4px 2px #E3E3E3;
 }
 
@@ -133,6 +133,11 @@ form:hover {
 
 .center > input:hover {
 	box-shadow: 0 0 1px 1px #D0D0D0;
+}
+
+.center > input:active {
+    border: 1px solid #6688FF;
+    box-shadow: 0 0 0 0;
 }
 
 #first {
