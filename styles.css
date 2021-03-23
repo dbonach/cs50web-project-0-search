@@ -20,14 +20,14 @@
 }
 
 .item {
-	margin-right: 20px;
+	margin-right: 14px;
 	font-size: 13px;
 	color: red;
 	display: inline;
 }
 
 .items {
-	margin: 14px 10px 0 0;
+	margin: 21px 18px 0 0;
 }
 
 a {
@@ -41,7 +41,7 @@ a:hover {
 
 /* Logo session */
 .logo {
-	height: 193.6px;
+	height: 193.2px;
 	background-color: white;
 	overflow: hidden;
 	position: relative;
@@ -79,7 +79,7 @@ a:hover {
 }
 
 .search-box {
-	width: 500px;
+	width: 584px;
 	height: 46px;
 	border: 1px solid #E3E3E3;
 	border-radius: 46px;
@@ -88,7 +88,8 @@ a:hover {
 }
 
 #search-box-image {
-    margin: 22px auto;
+    margin: 16px auto;
+    width: 538px;
 }
 
 svg {
@@ -100,7 +101,7 @@ svg {
 
 .search-box > input {
 	display: block;
-	width: 400px;
+	width: 484px;
 	height: 30px;
 	margin: 7px auto;
 	border: none; 
@@ -143,7 +144,7 @@ svg {
 	box-shadow: 0 0 1px 1px #D0D0D0;
 }
 
-.center > input:active type='hidden' {
+.center > input:active {
     border: 1px solid #6688FF;
     box-shadow: 0 0 0 0;
 }
