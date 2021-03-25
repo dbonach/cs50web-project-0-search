@@ -1,26 +1,19 @@
-let firstActive = 0;
-let secondActive = 0;
-
 document.addEventListener("click", function(event) {
-    if (firstActive){
-        document.getElementById("first").classList.remove("active");
-        document.getElementById("first").classList.add("button");
-        firstActive = 0;
+    let firstButton = document.getElementById("first");
+    let secondButton = document.getElementById("second");
+
+    if (firstButton.className == "active") {
+        firstButton.setAttribute("class","button");
     } 
-    else if (secondActive) {
-        document.getElementById("second").classList.remove("active");
-        document.getElementById("second").classList.add("button");
-        secondActive = 0;
+    else if (secondButton.className == "active") {
+        secondButton.setAttribute("class","button");
     }
 
-    if (event.target.id === 'first') {
-        event.target.classList.remove("button");
-        event.target.classList.add("active");
-        firstActive = 1;
+    if (event.target.id == "first") {
+        event.target.setAttribute("class","active");
     } 
-    else if (event.target.id === 'second') {
-        event.target.classList.remove("button");
-        event.target.classList.add("active");
-        secondActive = 1;
+    else if (event.target.id == "second") {
+        event.target.setAttribute("class","active");
     }
 })
+
