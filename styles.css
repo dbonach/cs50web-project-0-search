@@ -19,30 +19,11 @@
 	overflow: hidden;
 }
 
-.menu-advanced {
-    height: 60px;
-    background-color: #f1f1f1;
-}
-
-.mini-logo {
-    display: inline-block;
-    background: url('mini_logo.png');
-    width: 92px;
-    height: 33px;
-    background-size: 528px 68px;
-    margin: 17px 0 0 15px;
-    background-position: 0 -35px;
-}
-
 .item {
 	margin-right: 14px;
 	font-size: 13px;
 	color: red;
 	display: inline;
-}
-
-.right {
-    float: right;
 }
 
 .items {
@@ -59,15 +40,28 @@ a:hover {
 }
 
 /* Advanced Session */
+
+.menu-advanced {
+    height: 60px;
+    background-color: #f1f1f1;
+}
+
+.mini-logo {
+    display: inline-block;
+    background: url('mini_logo.png');
+    width: 92px;
+    height: 33px;
+    background-size: 528px 68px;
+    margin: 17px 0 0 15px;
+    background-position: 0 -35px;
+}
+
 .advanced-head {
     color: #d93025;
     background-color: white;
     font-size: 20px;
     margin: 25px 35px;
 }
-
-.advanced-title {
-}    
 
 .break {
     background-color: white;
@@ -120,6 +114,10 @@ a:hover {
 	border-radius: 46px;
 	background-color: white;
 	margin: 26px auto;
+}
+
+.right {
+    float: right;
 }
 
 #search-box-image {
