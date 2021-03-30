@@ -1,42 +1,42 @@
 /* General settings */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
 }
 
 .page {
-	margin: 0 auto;
-	background-color: white; 
+    margin: 0 auto;
+    background-color: white; 
 }
 
 /* Header */
 .menu {
-	height: 60px;
-	background-color: white;
-	text-align: right;
-	overflow: hidden;
+    height: 60px;
+    background-color: white;
+    text-align: right;
+    overflow: hidden;
 }
 
 .item {
-	margin-right: 14px;
-	font-size: 13px;
-	color: red;
-	display: inline;
+    margin-right: 14px;
+    font-size: 13px;
+    color: red;
+    display: inline;
 }
 
 .items {
-	margin: 21px 18px 0 0;
+    margin: 21px 18px 0 0;
 }
 
 a {
-	text-decoration: none;
-	color: #000000DE;
+    text-decoration: none;
+    color: #000000DE;
 }
 
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Advanced Session */
@@ -136,22 +136,22 @@ a:hover {
 
 /* Logo session */
 .logo {
-	height: 193.2px;
-	background-color: white;
-	overflow: hidden;
-	position: relative;
+    height: 193.2px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
 }
 
 .image {
-	background-size: 272px 92px;
-	height: 92px;
-	width: 272px;
-	background: url("main_logo.png");
-	position: absolute;
+    background-size: 272px 92px;
+    height: 92px;
+    width: 272px;
+    background: url("main_logo.png");
+    position: absolute;
     bottom: 0;
-	margin: auto;
-	left: 0;
-	right: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 
 #image-search {
@@ -159,27 +159,27 @@ a:hover {
 }
 
 .logo-subtext {
-	color: #4285f4;
-	font-size: 16px roboto-regular, arial;
-	position: relative;
-	left: 215px;
-	top: 76px;
+    color: #4285f4;
+    font-size: 16px roboto-regular, arial;
+    position: relative;
+    left: 215px;
+    top: 76px;
 }
 
 /* Search session upper */
 .search {
-	height: 160px;
-	background-color: white;
-	overflow: hidden;
+    height: 160px;
+    background-color: white;
+    overflow: hidden;
 }
 
 .search-box {
-	width: 584px;
-	height: 46px;
-	border: 1px solid #E3E3E3;
-	border-radius: 46px;
-	background-color: white;
-	margin: 26px auto;
+    width: 584px;
+    height: 46px;
+    border: 1px solid #E3E3E3;
+    border-radius: 46px;
+    background-color: white;
+    margin: 26px auto;
 }
 
 .right {
@@ -192,55 +192,55 @@ a:hover {
 }
 
 svg {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	margin: 12px 0 0 14px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 12px 0 0 14px;
 }
 
 .search-box > input {
-	display: block;
-	width: 484px;
-	height: 30px;
-	margin: 7px auto;
-	border: none; 
-	font-size: 16px;
+    display: block;
+    width: 484px;
+    height: 30px;
+    margin: 7px auto;
+    border: none; 
+    font-size: 16px;
 }
 
 .search-box > input:focus {
-	outline: none;
+    outline: none;
 }
 
 .search-box:hover {
-	box-shadow: 0 0 4px 2px #E3E3E3;
+    box-shadow: 0 0 4px 2px #E3E3E3;
 }
 
 /* Search session lower */
 .center {
-	width: 584px;
-	margin: auto;
-	text-align: center;
+    width: 584px;
+    margin: auto;
+    text-align: center;
 }
 
 .center > input {
-	background-color: #f8f9fa;
-	border: 1px solid #f8f9fa;
-	border-radius: 4px;
-	color: #3c4043;
-	font-family: arial, sans-serif;
-	font-size: 14px;
-	margin: 3px 4px;
-	padding: 0 16px;
-	line-height: 27px;
-	height: 34px;
-	text-align: center;
-	cursor: pointer;
-	user-select: none;
-	outline: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 3px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 34px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
 }
 
 .center > .button:hover {
-	box-shadow: 0 0 1px 1px #D0D0D0;
+    box-shadow: 0 0 1px 1px #D0D0D0;
 }
 
 .center > .button:active {
@@ -254,19 +254,19 @@ svg {
 }
 
 #first {
-	box-sizing: content-box;
-	width: 6.7em;
+    box-sizing: content-box;
+    width: 6.7em;
 }
 
 #second {
-	box-sizing: content-box;
-	width: 7.8em;
+    box-sizing: content-box;
+    width: 7.8em;
 }
 
 /* Footer */
 .footer {
-	height: 244.6px;
-	background-color: white;
+    height: 244.6px;
+    background-color: white;
 }
 
 
