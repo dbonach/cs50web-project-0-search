@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Advanced Search</title>
+        <script src='scriptAdvancedButton.js'></script>
         <link rel='stylesheet' href='styles.css'/>
     </head>
     <body>
@@ -26,20 +27,18 @@
 
                 <form action="https://google.com/search">
 
-                    <input value='en' name='hl' type='submit' hidden>
+                    <input value='en' name='hl' type='hidden'>
                     <div class='box1'>
                         <div class='box11'>
                             <span id='txt1'>Find pages with...</span>
                         </div>
                     </div>
-                    <div class='box2'>
-                    </div>
+                    <div class='box2'></div>
                     <div class='box31-head'>
                         <div class='box32-head'>
                         To do this in the search box.
                         </div>
                     </div>
-
                     <div class='clear'></div>
 
                     <div class='box1'>
@@ -76,14 +75,13 @@
                             <span class='span-box3'>"rat terrier"</span>
                         </div>
                     </div>
-
                     <div class='clear'></div>
 
                     <div class='box1'>
                         <div class='box11'>
                             <label>any of these words:</label>
-                    </div>
                         </div>
+                    </div>
                     <div class='box2'>
                         <div class='input-box'>
                             <input type='text' name='as_oq'></input>
@@ -115,15 +113,15 @@
                             <span class='span-box3'>-rodent, -"Jack Russell"</span>
                         </div>
                     </div>
-
                     <div class='clear'></div>
 
-                    <div class='box1'>
-                    </div>
-                    <div class='box2-button'>
-                        <input id='advanced-button' value='Advanced Search' type='submit'>
+                    <div class='bigger-break'></div>
 
+                    <div class='box1'></div>
+                    <div class='box2-button'>
+                        <input id='advanced-button' value='Advanced Search' type='submit' class='deactivated'>
                     </div>
+                    <div class='clear'></div>
                 </form>
 
             </div>

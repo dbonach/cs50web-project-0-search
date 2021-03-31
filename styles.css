@@ -165,6 +165,28 @@ a:hover {
     border: 1px solid #2f5bb7;
 }
 
+#advanced-button:active {
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    background: #357ae8;
+    border: 1px solid #2f5bb7;
+}
+
+#advanced-button:hover {
+    border: 1px solid #2f5bb7;
+    background-image: linear-gradient(#4d90fe,#4787ed);
+    border-image: initial
+}
+
+.active {
+    box-shadow: inset 0 0 0 1px #fff;    
+}
+
+.bigger-break {
+    margin: 18px 0;
+    clear: both;
+    border-top: 1px solid #ebebeb;
+}
+
 .input-box {
     width: 100%;
     height: 29px;
