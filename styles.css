@@ -120,6 +120,15 @@ a:hover {
     vertical-align: middle;
 }
 
+@media (max-width: 1000px) {
+    .box31-head {
+        display: none;
+    }
+    .box31 {
+        display: none;
+    }
+}
+
 .box32-head {
     height: 30px;
     display: table-cell;
