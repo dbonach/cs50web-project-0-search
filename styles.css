@@ -327,6 +327,7 @@ a:hover {
     background: transparent;
     cursor: pointer;
     outline: none;
+    padding-right: 13px;
 }
 
 .right-svg {
