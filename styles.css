@@ -289,18 +289,24 @@ a:hover {
     width: 538px;
 }
 
-svg {
+.left-svg {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 14px;
+    height: 24px;
+    width: 24px;
+}
+
+.left-svg > svg {
     width: 20px;
     height: 20px;
-    position: absolute;
-    margin: 12px 0 0 14px;
 }
 
 .search-box > input {
-    display: block;
-    width: 484px;
+    display: inline-block;
+    width: 400px;
     height: 30px;
-    margin: 7px auto;
+    margin: 7px 2px;
     border: none; 
     font-size: 16px;
 }
@@ -311,6 +317,32 @@ svg {
 
 .search-box:hover {
     box-shadow: 0 0 4px 2px #E3E3E3;
+}
+
+.search-box > button {
+    height: 44px;
+    width: 44px;
+    float: right;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.right-svg {
+    width: 24px;
+    color: #4285f4;
+    height: 24px;
+    margin: auto;
+}
+
+.right-svg > span {
+    line-height: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    fill: currentColor;
 }
 
 /* Search session lower */
