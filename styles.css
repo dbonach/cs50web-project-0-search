@@ -240,6 +240,10 @@ a:hover {
     position: relative;
 }
 
+.logo-index {
+    height: 203.2px;
+}
+
 .image {
     background-size: 272px 92px;
     height: 92px;
@@ -253,7 +257,7 @@ a:hover {
 }
 
 #image-search {
-    bottom: 6px;
+    bottom: 5px;
 }
 
 .logo-subtext {
@@ -261,7 +265,7 @@ a:hover {
     font-size: 16px roboto-regular, arial;
     position: relative;
     left: 215px;
-    top: 76px;
+    top: 75px;
 }
 
 /* Search session upper */
@@ -327,6 +331,7 @@ a:hover {
     background: transparent;
     cursor: pointer;
     outline: none;
+    padding-right: 13px;
 }
 
 .right-svg {
