@@ -277,7 +277,7 @@ a:hover {
     border: 1px solid #E3E3E3;
     border-radius: 46px;
     background-color: white;
-    margin: 26px auto;
+    margin: 26px auto 0 auto;
 }
 
 .right {
@@ -347,9 +347,8 @@ a:hover {
 
 /* Search session lower */
 .center {
-    width: 584px;
-    margin: auto;
     text-align: center;
+    padding-top: 18px;
 }
 
 .center > input {
@@ -359,10 +358,10 @@ a:hover {
     color: #3c4043;
     font-family: arial, sans-serif;
     font-size: 14px;
-    margin: 3px 4px;
+    margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
-    height: 34px;
+    height: 36px;
     text-align: center;
     cursor: pointer;
     user-select: none;
@@ -379,13 +378,11 @@ a:hover {
 }
 
 #first {
-    box-sizing: content-box;
-    width: 6.7em;
+    width: 127.4px;
 }
 
 #second {
-    box-sizing: content-box;
-    width: 7.8em;
+    width: 142.5px;
 }
 
 /* Footer */
