@@ -353,6 +353,48 @@ a:hover {
     padding-top: 8px;
 }
 
+#clear-button {
+    float: right;
+    /*display: none;*/
+    cursor: pinter;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 4px 0 8px;
+    height: 44px;
+}
+
+.clear-svg {
+    height: 100%;
+    color: #80868b;
+    vertical-align: middle;
+    outline: none;
+    display: inline-block;
+    fill: currentColor;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+    margin-right: 12px;
+}
+
+.clear-svg > svg {
+    box-sizing: content-box;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.vertical-bar {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    border-left: 1px solid #dfe1e5;
+    height: 65%;
+    vertical-align: middle;
+}
+
 .right-svg {
     width: 24px;
     color: #4285f4;
