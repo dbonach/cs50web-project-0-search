@@ -4,13 +4,12 @@ document.getElementById("audio-input").addEventListener("click", function() {
     let recognition = new SpeechRecognition();
 
     recognition.onstart = function() {
-        document.querySelector("#audio-input").style.borderRadius = "50%";
-        document.querySelector("#audio-input").style.boxShadow = "0 0 4px 2px red";
-
+        document.getElementById("audio-input").classList.add("animation");
         console.log("Listening");
     };
 
     recognition.onspeechend = function() {
+        document.getElementById("audio-input").classList.remove("animation");
         console.log("Done...");
         recognition.stop();
     };
@@ -24,9 +23,6 @@ document.getElementById("audio-input").addEventListener("click", function() {
         document.getElementById("image-input").value = transcript;
         document.getElementById("image-input").style.width = "340px";
         document.getElementById("clear-button").classList.remove("invisible");
-
-        document.querySelector("#audio-input").style.borderRadius = "none";
-        document.querySelector("#audio-input").style.boxShadow = "none";
 
         document.GoogleSearch.submit();
     };

@@ -1,7 +1,7 @@
 document.getElementById("clear-button").addEventListener("click", function() {
     document.getElementById("image-input").value = "";
     document.getElementById("clear-button").classList.add("invisible");
-    document.getElementById("image-input").style.width = "395px";
+    document.getElementById("image-input").style.width = "390px";
     console.log("clicou");
 });
 
