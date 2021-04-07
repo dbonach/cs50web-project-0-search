@@ -319,6 +319,10 @@ a:hover {
     width: 485px;
 }
 
+#input-image {
+    width: 390px;
+}
+
 .search-box > input:focus {
     outline: none;
 }
