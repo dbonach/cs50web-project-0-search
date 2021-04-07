@@ -20,8 +20,8 @@ document.getElementById("audio-input").addEventListener("click", function() {
         console.log(transcript);
         console.log(confidence);
 
-        document.getElementById("image-input").value = transcript;
-        document.getElementById("image-input").style.width = "340px";
+        document.getElementById("input").value = transcript;
+        document.getElementById("input").style.width = "340px";
         document.getElementById("clear-button").classList.remove("invisible");
 
         document.GoogleSearch.submit();
