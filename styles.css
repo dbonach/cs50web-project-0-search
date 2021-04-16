@@ -313,6 +313,7 @@ a:hover {
     margin: 7px 2px;
     border: none; 
     font-size: 16px;
+    color: rgba(0,0,0,.87);
 }
 
 #input-index {
@@ -360,19 +361,19 @@ a:hover {
 .right-margin {
     margin-right: 8px;
 }
-.animation {
+/* .animation {
     border-radius: 50%;
     animation-name: listening;
     animation-duration: 0.6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-out;
-}
+} */
 
-@keyframes listening {
+/* @keyframes listening {
     form {box-shadow: 0 0 4px #E3E3E3;}
     to {box-shadow: 0 0 10px red;}
-}
+} */
 
 #audio-input > svg {
     padding-top: 8px;
@@ -485,4 +486,112 @@ a:hover {
     background-color: white;
 }
 
+/* Page that is shown when audio input is active. */
+.listening {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    display: none;
+}
 
+.container {
+    width: 748px;
+    height: 300px;
+    margin: 226px auto 0 auto;
+}
+
+.float-left {
+    float: left;
+    margin-left: 45px; 
+}
+
+.float-right {
+    float: right;
+}
+
+#transcript {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 35px;
+    font-size: 32px;
+    font-family: arial,sans-serif;
+    color: #777777;
+    width: 400px;
+    height: 200px;
+}
+
+.animation {
+    animation-name: listening;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes listening {
+    form { left: 35px; }
+    to { left: 0; }
+}
+
+#transcript-mic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 62px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 6px 1px #E3E3E3;
+    width: 100%;
+    height: 100%;
+    padding: 37px;
+    border-radius: 50%;
+    fill: currentColor;
+    color: red;
+}
+
+.shadow {
+    box-shadow: 0 0 4px 1px #E3E3E3;
+}
+
+.animation-2 {
+    animation-name: growing;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes growing {
+    form{ padding: 62px; }
+    to{ padding: 18px; }
+}
+
+.animation-3 {
+    background-color: red;
+    color: white;
+    border: none;
+    box-shadow: 0 0 0 0 #d0d0d0;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+    from{ box-shadow: 0 0 0 0 #d0d0d0; }
+    to{ box-shadow: 0 0 0 60px #d0d0d0; }
+}

@@ -1,7 +1,26 @@
+let reco;
+
+document.addEventListener("click", function(event) {
+
+    if (event.target.id == "white-page") {
+        reco.abort();
+        document.getElementById("transcript").innerText = "Speak now";
+        document.getElementById("transcript").style.color = "#777777";
+        document.getElementById("mic-circle").classList.remove("animation-3");
+        console.log("stopped");
+    } 
+})
+
 document.getElementById("audio-input").addEventListener("click", function() {
 
     let SpeechRecognition = webkitSpeechRecognition;
     let recognition = new SpeechRecognition();
+    reco = recognition;
+
+    recognition.interimResults = true;
+    recognition.continuous = true;
+    document.querySelector(".listening").style.display = "block";
+    recognition.lang = "en-US";
 
     recognition.onstart = function() {
         document.getElementById("audio-input").classList.add("animation");
@@ -14,19 +33,48 @@ document.getElementById("audio-input").addEventListener("click", function() {
         recognition.stop();
     };
 
+    recognition.onend = function() {
+        document.querySelector(".listening").style.display = "none";
+        document.getElementById("mic-circle").classList.remove("animation-3");
+        document.getElementById("transcript").style.color = "#777777";
+        document.getElementById("transcript").innerText = "Speak now";
+        console.log("onend...");
+    }
+
+    recognition.onError = function() {
+        recognition.stop();
+    }
+
     recognition.onresult = function(event) {
-        let transcript = event.results[0][0].transcript;
-        let confidence = event.results[0][0].confidence;
-        console.log(transcript);
-        console.log(confidence);
 
-        document.getElementById("input-index").value = transcript;
-        document.getElementById("input-index").style.width = "435px";
-        document.getElementById("clear-button").classList.remove("invisible");
+        document.getElementById("mic-circle").classList.add("animation-3");
 
-        document.GoogleSearch.submit();
+        let interim_transcript = "";
+        let final_transcript = "";
+
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+            console.log("loop..");
+
+            if (event.results[i].isFinal) {
+                document.getElementById("transcript").style.color = "#000000";
+                final_transcript += event.results[i][0].transcript;
+                document.getElementById("transcript").innerText = final_transcript;
+            } else {
+                interim_transcript += event.results[i][0].transcript;
+            }
+        }
+
+        if(interim_transcript) {
+            document.getElementById("transcript").innerText = interim_transcript;
+
+        } else if(final_transcript) {
+            document.getElementById("input-index").value = final_transcript;
+            document.getElementById("input-index").style.width = "435px";
+            document.getElementById("clear-button").classList.remove("invisible");
+            recognition.stop();
+            document.GoogleSearch.submit();
+        }
     };
 
     recognition.start();
 });
-
