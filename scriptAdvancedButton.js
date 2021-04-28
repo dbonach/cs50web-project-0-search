@@ -1,19 +1,19 @@
 let clicked = false;
 
-document.addEventListener("mousedown", function(event) {
+document.addEventListener("mousedown", function (event) {
 
     if (event.target.id == "advanced-button") {
         clicked = true;
     }
 })
 
-document.addEventListener("mouseup", function(event) {
+document.addEventListener("mouseup", function (event) {
 
     if (clicked) {
-        document.getElementById("advanced-button").setAttribute("class","active");
+        document.getElementById("advanced-button").setAttribute("class", "active");
         clicked = false;
     }
     else {
-        document.getElementById("advanced-button").setAttribute("class","deactivated");
+        document.getElementById("advanced-button").setAttribute("class", "deactivated");
     }
 })

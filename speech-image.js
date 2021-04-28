@@ -1,24 +1,19 @@
-document.getElementById("audio-input").addEventListener("click", function() {
+document.getElementById("audio-input").addEventListener("click", function () {
 
     let SpeechRecognition = webkitSpeechRecognition;
     let recognition = new SpeechRecognition();
 
-    recognition.onstart = function() {
-        document.getElementById("audio-input").classList.add("animation");
-        console.log("Listening");
+    recognition.onstart = function () {
+        document.getElementById("audio-input").classList.add("animation4");
     };
 
-    recognition.onspeechend = function() {
-        document.getElementById("audio-input").classList.remove("animation");
-        console.log("Done...");
+    recognition.onspeechend = function () {
+        document.getElementById("audio-input").classList.remove("animation4");
         recognition.stop();
     };
 
-    recognition.onresult = function(event) {
+    recognition.onresult = function (event) {
         let transcript = event.results[0][0].transcript;
-        let confidence = event.results[0][0].confidence;
-        console.log(transcript);
-        console.log(confidence);
 
         document.getElementById("input-image").value = transcript;
         document.getElementById("input-image").style.width = "340px";

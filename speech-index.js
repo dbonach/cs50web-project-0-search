@@ -1,17 +1,15 @@
+// "reco" behaves like a pointer, it was created to abort recognition 
+// when there's a click on the "white-page"
 let reco;
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
 
     if (event.target.id == "white-page") {
         reco.abort();
-        document.getElementById("transcript").innerText = "Speak now";
-        document.getElementById("transcript").style.color = "#777777";
-        document.getElementById("mic-circle").classList.remove("animation-3");
-        console.log("stopped");
-    } 
+    }
 })
 
-document.getElementById("audio-input").addEventListener("click", function() {
+document.getElementById("audio-input").addEventListener("click", function () {
 
     let SpeechRecognition = webkitSpeechRecognition;
     let recognition = new SpeechRecognition();
@@ -22,30 +20,27 @@ document.getElementById("audio-input").addEventListener("click", function() {
     document.querySelector(".listening").style.display = "block";
     recognition.lang = "en-US";
 
-    recognition.onstart = function() {
+    recognition.onstart = function () {
         document.getElementById("audio-input").classList.add("animation");
-        console.log("Listening");
     };
 
-    recognition.onspeechend = function() {
+    recognition.onspeechend = function () {
         document.getElementById("audio-input").classList.remove("animation");
-        console.log("Done...");
         recognition.stop();
     };
 
-    recognition.onend = function() {
+    recognition.onend = function () {
         document.querySelector(".listening").style.display = "none";
         document.getElementById("mic-circle").classList.remove("animation-3");
         document.getElementById("transcript").style.color = "#777777";
         document.getElementById("transcript").innerText = "Speak now";
-        console.log("onend...");
     }
 
-    recognition.onError = function() {
+    recognition.onError = function () {
         recognition.stop();
     }
 
-    recognition.onresult = function(event) {
+    recognition.onresult = function (event) {
 
         document.getElementById("mic-circle").classList.add("animation-3");
 
@@ -53,7 +48,6 @@ document.getElementById("audio-input").addEventListener("click", function() {
         let final_transcript = "";
 
         for (let i = event.resultIndex; i < event.results.length; ++i) {
-            console.log("loop..");
 
             if (event.results[i].isFinal) {
                 document.getElementById("transcript").style.color = "#000000";
@@ -64,10 +58,10 @@ document.getElementById("audio-input").addEventListener("click", function() {
             }
         }
 
-        if(interim_transcript) {
+        if (interim_transcript) {
             document.getElementById("transcript").innerText = interim_transcript;
 
-        } else if(final_transcript) {
+        } else if (final_transcript) {
             document.getElementById("input-index").value = final_transcript;
             document.getElementById("input-index").style.width = "435px";
             document.getElementById("clear-button").classList.remove("invisible");

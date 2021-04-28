@@ -299,6 +299,7 @@ a:hover {
     margin-left: 14px;
     height: 24px;
     width: 24px;
+    margin-top: 4px;
 }
 
 .left-svg > svg {
@@ -361,19 +362,20 @@ a:hover {
 .right-margin {
     margin-right: 8px;
 }
-/* .animation {
+
+.animation4 {
     border-radius: 50%;
-    animation-name: listening;
+    animation-name: listening4;
     animation-duration: 0.6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-out;
-} */
+}
 
-/* @keyframes listening {
+@keyframes listening4 {
     form {box-shadow: 0 0 4px #E3E3E3;}
     to {box-shadow: 0 0 10px red;}
-} */
+}
 
 #audio-input > svg {
     padding-top: 8px;
@@ -421,7 +423,7 @@ a:hover {
     margin-top: 8px;
     border-left: 1px solid #dfe1e5;
     height: 65%;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .right-svg {
