@@ -48,7 +48,7 @@ a:hover {
 
 .mini-logo {
     display: inline-block;
-    background: url('mini_logo.png');
+    background: url('../images/mini_logo.png');
     width: 92px;
     height: 33px;
     background-size: 528px 68px;
@@ -248,7 +248,7 @@ a:hover {
     background-size: 272px 92px;
     height: 92px;
     width: 272px;
-    background: url("main_logo.png");
+    background: url("../images/main_logo.png");
     position: absolute;
     bottom: 0;
     margin: auto;
