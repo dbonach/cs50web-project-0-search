@@ -1,10 +1,12 @@
-# CS50web project0 - Search
+# CS50web Project 0 - Search
 
 * * *
 
 This is my project 0 from [CS50’s Web Programming with Python and JavaScript.](https://cs50.harvard.edu/web/2020/)
 
 Basically we are required to replicate google's search page, it includes the main page, images and the start of advanced search.
+
+[Official Requirements.](https://cs50.harvard.edu/web/2020/projects/0/search/)
 
 The pages should be able to submit a query to google and redirect to the result.
 
