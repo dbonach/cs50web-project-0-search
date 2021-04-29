@@ -16,20 +16,20 @@ using a the voice recognition api.
 
 * * *
 
-* #### Main search
+#### Main search
 ![image](https://user-images.githubusercontent.com/62313672/116489009-37bc0200-a86a-11eb-8a01-99dcd8b484b3.png)
 
 ***
 
-* #### Image search
+#### Image search
 ![image](https://user-images.githubusercontent.com/62313672/116490310-6a1b2e80-a86d-11eb-986b-6e13468efaad.png)
 
 *****
 
-* #### Advanced search
+#### Advanced search
 ![image](https://user-images.githubusercontent.com/62313672/116490357-8cad4780-a86d-11eb-8430-9c7a51aadd88.png)
 
 - - -
 
-* #### Voice recognition
+#### Voice recognition
 ![image](https://user-images.githubusercontent.com/62313672/116490428-bebea980-a86d-11eb-9894-fdc159c82fe2.png)
